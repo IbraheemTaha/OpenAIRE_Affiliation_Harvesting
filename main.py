@@ -79,7 +79,7 @@ def main():
     output_df=pd.DataFrame(columns=output_columns)
     
     output_df_writing_thres = 1
-    output_file_name='output.csv'
+    output_file_name='files/output.csv'
         
     scraping = Scraping(profiles_file)
     dps = scraping.dps
