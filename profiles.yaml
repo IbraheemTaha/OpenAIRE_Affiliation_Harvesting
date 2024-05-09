@@ -1,0 +1,162 @@
+
+#Both regex and xpath
+academic.oup.com:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  regex: "<script type=\"application/ld+json\">\\s*(\\{.*?\\})\\s*</script>"
+  udf: "oup"
+  publisher:
+    - "Oxford University Press (OUP)"
+  delay_string: "oup"
+  delay:
+    from: 3
+    to: 7
+
+
+# regex
+ieeexplore.ieee.org:
+  regex: "xplGlobal.document.metadata=(\\{.*?\\});"
+  udf: "ieee"
+  publisher:
+    - "IEEE"
+    - "Institute of Electrical and Electronics Engineers (IEEE)"
+  delay_string: "ieee"
+  delay:
+    from: 3
+    to: 7
+    
+
+zenodo.org:
+  regex: "data-record='(.*?)'"
+  udf: "zenodo"
+  publisher:
+    - "Zenodo"
+  delay_string: "zenodo"
+  delay:
+    from: 3
+    to: 7
+
+taylorfrancis.com:
+  regex: "&q;affiliations&q;:\\[\\{.*?\\}\\]"
+  udf: "taylorfrancis"
+  publisher:
+    - "Routledge"
+  delay_string: "routledge"
+  delay:
+    from: 3
+    to: 7
+
+# xpaths
+
+link.springer.com:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  #xpath: "//section[@aria-labelledby='author-information']//ol[@class='c-article-author-affiliation__list']/li/p[@class='c-article-author-affiliation__address']/text()"
+  publisher: 
+    - "Springer Science and Business Media LLC"
+    - "Springer Berlin Heidelberg"
+    - "Springer International Publishing"
+  delay_string: "springer"
+  delay:
+    from: 3
+    to: 7
+
+
+onlinelibrary.wiley.com:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  publisher:
+    - "Wiley"
+  delay_string: "wiley"
+  delay:
+    from: 3
+    to: 7
+
+tandfonline.com:
+  xpath: "//div[@class='literatumAuthors']//div[@class='entryAuthor']/span[@class='overlay']/text()"
+  publisher:
+    - "Informa UK Limited"
+  delay_string: "informa uk"
+  delay:
+    from: 3
+    to: 7
+
+dl.acm.org:
+  xpath: "//li[contains(@class, 'loa__item')]//p[@data-pill-inst]/text()"
+  publisher:
+    - "ACM"
+    - "Association for Computing Machinery (ACM)"
+  delay_string: "acm"
+  delay:
+    from: 3
+    to: 7
+
+
+journals.sagepub.com:
+  xpath: "//div[@property='affiliation']/span[@property='name']/text()"
+  publisher:
+    - "SAGE Publications"
+  delay_string: "sage"
+  delay:
+    from: 3
+    to: 7
+
+journals.lww.com:
+  xpath: "//section[@id='ejp-article-authors-info']//p/text()"
+  publisher:
+    - "Ovid Technologies (Wolters Kluwer Health)"
+  delay_string: "ovid"
+  delay:
+    from: 3
+    to: 7
+
+cambridge.org:
+  xpath: "//dl[@id='authors-details']//div[contains(@class, 'author')]//div[@class='d-sm-flex flex-column flex-sm-1 d-inline']/span/span/text()"
+  publisher:
+    - "Cambridge University Press (CUP)"
+  delay_string: "cambridge"
+  delay:
+    from: 3
+    to: 7
+
+hal:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  publisher:
+    - "HAL CCSD"
+  delay_string: "hal"
+  delay:
+    from: 3
+    to: 7
+
+cnrs.fr:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  publisher:
+    - "HAL CCSD"
+  delay_string: "hal"
+  delay:
+    from: 3
+    to: 7
+
+acs.org:
+  xpath: "//div[contains(@class, 'authorItemInformation')]//span[contains(@class, 'hlFld-Affiliation')]/text()"
+  publisher:
+    - "American Chemical Society (ACS)"
+  delay_string: "acs"
+  delay:
+    from: 3
+    to: 7
+
+mdpi.com:
+  xpath: "//div[@class='art-affiliations']/div[contains(@class, 'affiliation')][not(div[@class='affiliation-item']/sup) or translate(div[@class='affiliation-item']/sup, '0123456789', '') = '']/div[@class='affiliation-name']/text()"
+  publisher:
+    - "MDPI AG"
+  delay_string: "mdpi"
+  delay:
+    from: 3
+    to: 7
+
+iop.org:
+  xpath: "//meta[@name='citation_author_institution']/@content"
+  publisher:
+    - "IOP Publishing"
+  delay_string: "iop"
+  delay:
+    from: 3
+    to: 7
