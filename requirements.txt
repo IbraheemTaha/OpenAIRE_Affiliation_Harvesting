@@ -86,7 +86,7 @@ tokenizers==0.15.2
 torch==2.2.1
 tqdm==4.66.2
 traitlets==5.14.1
-transformers==4.36.2
+transformers==4.48.3
 twisted>=24.7.0rc1
 twisted-iocpsupport==1.0.4
 typer==0.9.0
