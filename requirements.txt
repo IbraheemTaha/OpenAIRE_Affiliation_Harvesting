@@ -66,7 +66,7 @@ regex==2023.12.25
 requests==2.31.0
 requests-file==2.0.0
 safetensors==0.4.2
-Scrapy==2.11.1
+Scrapy==2.13.3
 service-identity==24.1.0
 six==1.16.0
 smart-open==6.4.0
