@@ -50,8 +50,8 @@ preshed==3.0.9
 prompt-toolkit==3.0.43
 Protego==0.3.0
 pure-eval==0.2.2
-pyasn1==0.5.1
-pyasn1-modules==0.3.0
+pyasn1==0.6.1
+pyasn1-modules==0.4.1
 pycparser==2.21
 pydantic==2.6.4
 pydantic_core==2.16.3
