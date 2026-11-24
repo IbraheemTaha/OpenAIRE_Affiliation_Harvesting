@@ -1,0 +1,6 @@
+# Optional: only needed for the spaCy NER helpers in nlp_services.py,
+# which the default run (main.py) does not use.
+# After installing, download the model with:
+#   python -m spacy download en_core_web_trf
+spacy>=3.8
+spacy-curated-transformers>=0.3

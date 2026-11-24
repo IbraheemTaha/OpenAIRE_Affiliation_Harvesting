@@ -27,6 +27,7 @@ The project was built for controlled batches of scholarly publication records, e
 | `files/to_test.tsv` | Example input file. |
 | `files/output.csv` | Example output file. |
 | `requirements.txt` | Python dependencies. |
+| `requirements-nlp.txt` | Optional dependencies for the spaCy NER helpers. |
 
 ## Input format
 
@@ -59,6 +60,21 @@ On Windows, activate the environment with:
 
 ```bash
 .venv\Scripts\activate
+```
+
+`requirements.txt` lists only the packages the code imports directly, with minimum versions rather than exact pins. pip resolves everything else at install time, so a fresh install always gets the latest patched releases. Do not overwrite it with `pip freeze` output.
+
+To refresh an existing environment:
+
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+The spaCy helpers in `nlp_services.py` are optional and not used by the default run. To use them:
+
+```bash
+pip install -r requirements-nlp.txt
+python -m spacy download en_core_web_trf
 ```
 
 ## Run

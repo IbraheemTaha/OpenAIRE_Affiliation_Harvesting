@@ -6,7 +6,6 @@ import time
 import pandas as pd
 from bs4 import BeautifulSoup
 
-from nlp_services import extract_entities, load_nlp_model
 from scraping import Scraping
 from timed_object import TimedObject
 from utils import fetch_and_parse, load_profiles, write_df_to_csv
