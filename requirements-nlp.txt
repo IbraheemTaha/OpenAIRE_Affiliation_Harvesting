@@ -2,5 +2,5 @@
 # which the default run (main.py) does not use.
 # After installing, download the model with:
 #   python -m spacy download en_core_web_trf
-spacy>=3.8
-spacy-curated-transformers>=0.3
+spacy>=3.8.18
+spacy-curated-transformers>=2.1.2
